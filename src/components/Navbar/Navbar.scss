@@ -1,0 +1,112 @@
+.navbar {
+    background-color: #ffffff;
+    padding: .7rem 7%;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgb(226, 222, 222);
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    white-space: nowrap;
+
+    .icon-burger {
+        font-size: 2rem;
+        color: #606077;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+        cursor: pointer;
+    }
+
+    .nav-link {
+        gap: 4rem;
+
+        .each-link {
+            list-style: none;
+            text-decoration: none;
+            color: #606077;
+
+            &:active {
+                color: inherit
+            }
+        }
+
+        a.active {
+            li {
+                color: #2E2E99;
+                font-weight: bold;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 105%;
+                    height: 3px;
+                    left: -2%;
+                    bottom: -20px;
+                    background-color: #2E2E99;
+                }
+            }
+
+        }
+    }
+
+
+    .nav-last {
+        gap: 1rem;
+
+        &--1, &--2 {
+            background-color:#2E2E99;
+            padding: .5rem .7rem .3rem;
+            border-radius: 4px;
+        }
+        &--2 {
+            background-color: #2E2E99;
+            padding: .5rem .4rem .3rem .5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1380px)  {
+    .navbar {
+        padding: .7rem 2%;
+    }
+
+    .navbar .nav-link {
+        grid-gap: 4rem;
+        gap: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 800px)  {
+    .navbar {
+    }
+
+    .navbar .nav-link {
+        gap: 2rem 2rem;
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin: 3.7rem 0;
+        padding: 1.5rem;
+        border: 1px solid #2E2E99;
+        flex-wrap: wrap;
+        transition: all .2s ease-in;
+        z-index: -1;
+    }
+
+
+    .navbar .toggler {
+        margin: -10rem 0;
+    }
+
+    .navbar .icon-burger {
+        top: 1rem;
+        right: 9rem;
+        display: inline;
+    }
+}

@@ -1,0 +1,130 @@
+.customer--main {
+    display: inline-block;
+
+    .heading {
+        background: #2E2E99;
+        border-radius: 4px;
+        font-family: Mukta;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        color: rgba(255, 255, 255, 0.87);
+        padding: .4rem 0 0;
+        text-align: center;
+        width: 161px;
+        height: 42px;
+        cursor: pointer;
+    }
+
+    p {
+        font-family: Mukta;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 23px;
+        letter-spacing: 0.04em;
+        color: #606077;
+        margin: 2rem 0 1rem;
+    }
+    
+    .section-container {
+        gap: 2rem;
+        width: 85vw;
+        flex-wrap: wrap;
+
+    }
+
+    .bg-white {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 4px;
+        height: 100%;
+        max-width: 700px;
+    }
+
+    .section--1 {
+        width: 50%;
+        max-width: 550px;
+        min-width: 400px;
+
+        .flex--3 {
+            margin: 0 0 1rem;
+        }
+
+        label {
+            font-family: Mukta;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 27px;
+            color: #373737;
+            padding-bottom: .5rem;
+        }
+
+        input {
+            background: #FFFFFF;
+            border: 1px solid #DEA000;
+            box-sizing: border-box;
+            border-radius: 5px;
+            height: 46px;
+        }
+
+        .double--input {
+            gap: 1rem;
+
+            .flex--3 {
+                width: 50%
+            }
+        }
+    
+    } 
+
+    .button-container {
+        justify-content: flex-end;
+        gap: 2rem;
+        margin-top: 2rem;
+        max-width: 700px;
+
+
+        button {
+            width: 200px;
+            height: 46px;
+            background: #DEA000;
+            border-radius: 5px;
+            font-family: Mukta;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 27px;
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: white;
+
+            &:first-child {
+                background-color: transparent;
+                border: 2px solid #01037C;
+                color: #01037C;
+            }
+        }
+
+
+    }
+
+}
+
+
+@media screen and (max-width: 400px)  {
+    .customer--main .section--1 {
+        width: 100%;
+        max-width: 550px;
+        min-width: 299px;
+    }
+
+    .customer--main .section-container {
+        gap: 2rem;
+        width: 75%;
+        flex-wrap: wrap;
+    }
+
+}

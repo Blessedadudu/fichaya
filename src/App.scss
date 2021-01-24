@@ -1,0 +1,23 @@
+.main--body {
+  margin: 10rem 7%;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+input {
+  padding-left: 1rem;
+}
+
+
+@media screen and (max-width: 500px)  {
+  .main--body {
+    margin: 10rem 3%;
+  }
+}
+
+
+
