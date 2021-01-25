@@ -42,7 +42,7 @@ const Navbar = () => {
                 <div className='nav-last--1'>
                     <img src={bell} alt='' />
                 </div>
-                <div className='nav-last--2'>
+                <div className='nav-last--2 flex--2'>
                     <img src={avatar} alt=''/>
                     <img src={arrow} alt=''/>
                 </div>

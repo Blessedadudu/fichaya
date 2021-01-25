@@ -54,7 +54,7 @@
 
 
     .nav-last {
-        gap: 1rem;
+        // gap: 1rem;
 
         &--1, &--2 {
             background-color:#2E2E99;
@@ -64,6 +64,7 @@
         &--2 {
             background-color: #2E2E99;
             padding: .5rem .4rem .3rem .5rem;
+            margin-left: 1rem;
         }
     }
 }
