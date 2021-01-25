@@ -115,3 +115,11 @@
         display: inline;
     }
 }
+
+
+
+@media screen and (max-width: 600px)  {
+    .navbar .nav-link a.active li::after {
+        bottom: -10px;
+    }
+}
