@@ -1,6 +1,4 @@
 .customer--main {
-    display: inline-block;
-
     .heading {
         background: #2E2E99;
         border-radius: 4px;
@@ -30,8 +28,8 @@
     
     .section-container {
         gap: 2rem;
-        width: 85vw;
         flex-wrap: wrap;
+        justify-content: space-between;
 
     }
 
@@ -40,12 +38,11 @@
         padding: 2rem;
         border-radius: 4px;
         height: 100%;
-        max-width: 700px;
     }
 
     .section--1 {
-        width: 50%;
-        max-width: 550px;
+        width: 47%;
+        max-width: 700px;
         min-width: 400px;
 
         .flex--3 {
@@ -114,17 +111,18 @@
 }
 
 
-@media screen and (max-width: 400px)  {
+@media screen and (max-width: 500px)  {
     .customer--main .section--1 {
         width: 100%;
-        max-width: 550px;
+        // max-width: 550px;
         min-width: 299px;
     }
 
     .customer--main .section-container {
         gap: 2rem;
-        width: 75%;
         flex-wrap: wrap;
     }
+
+
 
 }
