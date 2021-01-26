@@ -1,10 +1,10 @@
 import React from 'react'
-import './Sidebar.scss'
+import './Invoice.scss'
 import mainlogo from '../../assets/logo.svg'
 
-const Sidebar = () => {
+const Invoice = () => {
     return ( 
-        <main className='sidebar'>
+        <main className='invoice'>
             <h1 className='heading'>Generate invoice</h1>
             <p>ENTER INVOICE INFO</p> 
             <section className='section'>
@@ -87,4 +87,4 @@ const Sidebar = () => {
     )
 }
 
-export default Sidebar
+export default Invoice

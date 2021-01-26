@@ -1,5 +1,9 @@
 import React from 'react'
 import './Body.scss'
+import arrow from '../../assets/arrow.svg'
+import { NavLink } from "react-router-dom";
+
+
 
 const Body = () => {
     return (
@@ -49,6 +53,23 @@ const Body = () => {
                         <label>CLEANING DATE</label>
                         <p>09•10•2019</p>
                     </div>
+                </div>
+                <div className='button-arrow flex--1'>
+                    <button>Action</button>
+                    <img src={arrow} alt=''/>
+                </div>
+                <div className='links'>
+                    <ul>
+                        <NavLink to='/'>
+                            <li>Contact customer</li>
+                        </NavLink>
+                        <NavLink to='/invoice'>
+                            <li>Generate invoice</li>
+                        </NavLink>
+                        <NavLink to='/customers'>
+                            <li>Reject request</li>
+                        </NavLink>
+                    </ul>
                 </div>
             </section>
         </main>
